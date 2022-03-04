@@ -13,7 +13,7 @@ Parameters:
     Type: AWS::EC2::KeyPair::KeyName
 
   Subnets:
-    Description: Select subnets 
+    Description: Choose your subnets.
     Type: List<AWS::EC2::Subnet::Id>
   
 Resources:
@@ -43,7 +43,6 @@ Resources:
           FromPort: 80
           ToPort: 80
           SourceSecurityGroupId: !GetAtt ALBSecurityGroup.GroupId
-
   WebServerLT:
     Type: AWS::EC2::LaunchTemplate
     Properties:
@@ -145,8 +144,8 @@ Resources:
         - !Ref MyDBSecurityGroup
       Engine: MySQL
       EngineVersion: 8.0.19
-      MasterUserPassword: Serdar_1
       MasterUsername: admin
+      MasterUserPassword: Serdar_1
       Port: 3306
       PubliclyAccessible: true 
 
