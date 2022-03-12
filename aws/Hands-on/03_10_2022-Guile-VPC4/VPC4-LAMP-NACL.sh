@@ -96,9 +96,8 @@ sudo systemctl status mariadb
 
 # No, because there is no outbound connectivity. Try to do it manually, it will not work that way, too.
 
-sudo yum update -y
 sudo yum install -y mariadb-server
-	
+
 # 12. Create NAT instance in "Public Subnet 1a" (Other public subnets will also work).
 # (You can also create a NAT Gateway for outbound connectivity)
 
