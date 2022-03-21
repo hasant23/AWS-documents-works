@@ -27,7 +27,7 @@ df -h
 ls -lh /mnt/2nd-vol/
 # if there is no data on it, create a new file to show persistence in later steps
 cd /mnt/2nd-vol
-sudo touch guilewashere.txt
+sudo touch hasanwashere.txt
 ls
 # modify the new volume in aws console, and enlarge capacity to double gb (from 2GB to 4GB for this demo).
 # check if the attached volume is showing the new capacity
